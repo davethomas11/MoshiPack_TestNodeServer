@@ -10,7 +10,13 @@ app.get('/cats', (req, res) => {
     });
 });
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'));
+var port = 3000;
+
+if (process.env.PRODUCTION) {
+    port = 80;
+}
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 function getCats(callback) {
     let db = new sqlite3.Database('db/cat.db', sqlite3.OPEN_READ, (err) => {
