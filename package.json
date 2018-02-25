@@ -1,16 +1,19 @@
 {
-  "name": "com.daveanthonythomas.moshipack.node",
-  "version": "1.0.0",
-  "description": "Test server to serve message pack",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "davethomas11@icloud.com",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.2",
-    "msgpack5": "^4.0.1",
-    "sqlite3": "^3.1.13"
-  }
+    "name": "com.daveanthonythomas.moshipack.node",
+    "version": "1.0.0",
+    "description": "Test server to serve message pack",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "davethomas11@icloud.com",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.16.2",
+        "msgpack5": "^4.0.1",
+        "sqlite3": "^3.1.13"
+    },
+    "scripts": {
+        "start": "node index.js"
+    }
 }
