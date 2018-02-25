@@ -10,11 +10,7 @@ app.get('/cats', (req, res) => {
     });
 });
 
-var port = 3000;
-
-if (process.env.PRODUCTION) {
-    port = 80;
-}
+var port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
